@@ -1,47 +1,178 @@
-# OpenNext Starter
+# الحامد للتجارة | متجر إلكتروني احترافي
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+متجر إلكتروني عصري ومتطور متخصص في إكسسوارات الموبايلات، مضخمات الصوت، الأجهزة الكهربائية والإلكترونية.
 
-## Getting Started
+## 🎨 الهوية البصرية
 
-Read the documentation at https://opennext.js.org/cloudflare.
+التصميم يعتمد على هوية بصرية راقية بألوان:
+- **الأبيض**: المساحات النظيفة والخلفيات
+- **الأسود**: النصوص الرئيسية والعناصر المهمة
+- **البرتقالي** (#f97316): اللون الأساسي للعلامة التجارية
 
-## Develop
+## ✨ المميزات
 
-Run the Next.js development server:
+### التصميم
+- ✅ تصميم عصري Premium بمستوى عالمي
+- ✅ UI/UX احترافي مدروس بعناية
+- ✅ دعم كامل للغة العربية مع RTL
+- ✅ متجاوب بالكامل مع جميع أحجام الشاشات (320px - 2560px)
+- ✅ Design System متكامل وموحد
+- ✅ Animations خفيفة واحترافية
+- ✅ Dark mode ready
+
+### الوظائف
+- 🛍️ عرض المنتجات باحترافية
+- 🔍 بحث متقدم وفلترة
+- 🛒 سلة تسوق متطورة
+- 💳 دعم الدفع عند الاستلام وشام كاش
+- 📦 نظام تتبع الطلبات
+- 🎯 إدارة المخزون
+- 📊 لوحة إدارة احترافية
+- 📱 تكامل مع WhatsApp
+
+### الأداء
+- ⚡ تحميل سريع جداً
+- 🚀 Server Components
+- 📦 Image Optimization
+- 🎯 Core Web Vitals محسّنة
+- 🔄 ISR & SSG عند الحاجة
+
+### SEO & Accessibility
+- 🔍 SEO-friendly من البداية
+- ♿ WCAG 2.1 compliant
+- 📱 Mobile-first approach
+- 🎯 Semantic HTML
+- 🏷️ Structured Data
+
+## 🛠️ التقنيات
+
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS 4
+- **Database**: Neon (PostgreSQL)
+- **ORM**: Drizzle ORM
+- **Deployment**: Cloudflare Pages
+- **Language**: TypeScript (Strict Mode)
+- **Validation**: Zod
+- **Authentication**: NextAuth (للإدارة)
+
+## 📦 التثبيت
 
 ```bash
+# تثبيت المكتبات
+npm install
+
+# إعداد قاعدة البيانات
+npm run db:generate
+npm run db:push
+
+# إضافة بيانات تجريبية (اختياري)
+npm run db:seed
+
+# تشغيل السيرفر
 npm run dev
-# or similar package manager command
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌍 المتغيرات البيئية
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+أنشئ ملف `.env` وأضف:
 
-## Preview
+```env
+DATABASE_URL="your_neon_database_url"
+NEXT_PUBLIC_SITE_URL="http://localhost:3000"
+```
 
-Preview the application locally on the Cloudflare runtime:
+## 📱 الصفحات
+
+### صفحات العملاء
+- `/` - الصفحة الرئيسية
+- `/products` - جميع المنتجات
+- `/products/[slug]` - تفاصيل المنتج
+- `/cart` - سلة المشتريات
+- `/checkout` - إتمام الطلب
+- `/order-success` - نجاح الطلب
+- `/order-tracking` - تتبع الطلب
+
+### صفحات الإدارة
+- `/admin` - لوحة التحكم
+- `/admin/products` - إدارة المنتجات
+- `/admin/orders` - إدارة الطلبات
+- `/admin/categories` - إدارة التصنيفات
+- `/admin/settings` - الإعدادات
+
+## 🎯 نظام التصميم
+
+### الألوان
+```css
+/* Brand Colors */
+orange-500: #f97316  /* Primary */
+neutral-900: #171717 /* Text */
+neutral-50: #fafafa  /* Background */
+```
+
+### الخطوط
+```css
+font-family: 'Cairo', -apple-system, system-ui, sans-serif;
+```
+
+### التباعد
+```
+4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px
+```
+
+### الحواف المستديرة
+```
+sm: 0.375rem, md: 0.625rem, lg: 0.75rem, xl: 1rem
+```
+
+## 📐 Breakpoints
+
+```css
+sm: 640px   /* Mobile Large */
+md: 768px   /* Tablet */
+lg: 1024px  /* Desktop */
+xl: 1280px  /* Desktop Large */
+2xl: 1536px /* Desktop XL */
+```
+
+## 🚀 الأوامر
 
 ```bash
-npm run preview
-# or similar package manager command
+# التطوير
+npm run dev
+
+# البناء
+npm run build
+
+# التشغيل (Production)
+npm run start
+
+# Lint
+npm run lint
+
+# قاعدة البيانات
+npm run db:generate  # إنشاء Migrations
+npm run db:push      # تطبيق Migrations
+npm run db:studio    # فتح Drizzle Studio
+npm run db:seed      # إضافة بيانات تجريبية
 ```
 
-## Deploy
+## 📝 العملة
 
-Deploy the application to Cloudflare:
+جميع الأسعار بالليرة السورية الجديدة (ل.س)
 
-```bash
-npm run deploy
-# or similar package manager command
-```
+## 🔐 الأمان
 
-## Learn More
+- ✅ Validation على جميع المدخلات
+- ✅ حماية API Routes
+- ✅ Session Management آمن
+- ✅ Rate Limiting
+- ✅ CSRF Protection
+- ✅ XSS Prevention
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 الترخيص
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+هذا المشروع مطور خصيصاً لمحل الحامد للتجارة.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
+
+Made with ❤️ for Al-Hamed Trading

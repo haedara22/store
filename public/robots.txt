@@ -1,0 +1,16 @@
+# robots.txt for Al-Hamed Trading Store
+
+User-agent: *
+Allow: /
+Allow: /products
+Allow: /products/*
+Allow: /cart
+Allow: /order-tracking
+
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /api/*
+Disallow: /checkout
+Disallow: /order-success
+
+Sitemap: https://alhamed-store.com/sitemap.xml
