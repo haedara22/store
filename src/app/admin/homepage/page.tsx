@@ -8,7 +8,7 @@ import { AdminLayout } from '@/components/admin/AdminLayout';
 import { Card } from '@/components/ui/Card';
 import { formatCurrency } from '@/lib/utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 async function getFeaturedProducts() {

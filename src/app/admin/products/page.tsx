@@ -14,7 +14,7 @@ import { Card } from '@/components/ui/Card';
 import { formatCurrency } from '@/lib/utils';
 import { DeleteProductButton } from '@/components/admin/DeleteProductButton';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 interface SearchParams {

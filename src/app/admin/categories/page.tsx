@@ -9,7 +9,7 @@ import { UnifiedPageHeader, HeaderStats, HeaderStatCard } from '@/components/adm
 import { UnifiedEmptyState } from '@/components/admin/UnifiedEmptyState';
 import { Card } from '@/components/ui/Card';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 async function getCategoriesWithCounts() {

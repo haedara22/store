@@ -12,7 +12,7 @@ import { Card } from '@/components/ui/Card';
 import { formatCurrency, formatRelativeTime } from '@/lib/utils';
 import { getOrderStatusStyle } from '@/lib/design-system';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 interface SearchParams {
