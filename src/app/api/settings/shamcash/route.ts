@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import { db, storeSettings } from '@/db';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {

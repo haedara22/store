@@ -4,7 +4,8 @@ import { eq } from 'drizzle-orm';
 import { nanoid } from 'nanoid';
 import { generateOrderNumber } from '@/lib/utils';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 // GET /api/orders?orderId=xxx or ?orderNumber=xxx
 export async function GET(request: NextRequest) {

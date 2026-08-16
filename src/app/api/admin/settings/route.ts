@@ -4,7 +4,8 @@ import { db, storeSettings } from '@/db';
 import { generateId } from '@/lib/utils';
 import { eq } from 'drizzle-orm';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 // GET /api/admin/settings
 export async function GET() {

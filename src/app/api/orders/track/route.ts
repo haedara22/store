@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { db, orders } from '@/db';
 import { eq, and } from 'drizzle-orm';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 // GET /api/orders/track?orderNumber=xxx&phone=xxx
 export async function GET(request: NextRequest) {
