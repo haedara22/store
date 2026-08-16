@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "next build --webpack",
     "dev": "next dev",
-    "build": "next build",
     "build:worker": "open-next build --target cloudflare",
-    "deploy": "npm run build && npx opennextjs-cloudflare build && npx opennextjs-cloudflare deploy",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "deploy:skip": "npx opennextjs-cloudflare deploy --skip-build",
     "cf:build": "npx opennextjs-cloudflare build",
     "cf:deploy": "npx opennextjs-cloudflare deploy",
@@ -14,7 +14,7 @@
     "clean:all": "npm run clean && rm -rf node_modules package-lock.json",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "drizzle-kit generate",
@@ -26,6 +26,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@neondatabase/serverless": "^0.10.4",
+    "@opennextjs/cloudflare": "^1.20.2",
     "bcryptjs": "^2.4.3",
     "drizzle-orm": "^0.38.3",
     "nanoid": "^5.0.9",
@@ -49,6 +50,7 @@
     "eslint-config-next": "16.2.11",
     "tailwindcss": "^4.0.11",
     "tsx": "^4.19.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.123.0"
   }
 }
