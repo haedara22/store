@@ -5,6 +5,7 @@ import { generateId } from '@/lib/utils';
 import { eq } from 'drizzle-orm';
 
 export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 // POST /api/admin/categories
 export async function POST(request: NextRequest) {
