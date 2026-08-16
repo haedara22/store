@@ -7,7 +7,7 @@ import { CategoryCard } from '@/components/home/CategoryCard';
 import { ProductCard } from '@/components/products/ProductCard';
 
 export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 async function getFeaturedProducts() {
   try {

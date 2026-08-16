@@ -8,7 +8,7 @@ import { ProductCard } from '@/components/products/ProductCard';
 import { ProductsFilter } from '@/components/products/ProductsFilter';
 
 export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 interface SearchParams {
   search?: string;

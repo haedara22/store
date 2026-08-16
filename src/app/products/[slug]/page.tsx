@@ -8,7 +8,7 @@ import { ProductInfo } from '@/components/products/ProductInfo';
 import { ProductCard } from '@/components/products/ProductCard';
 
 export const dynamic = 'force-dynamic';
-export const runtime = 'edge';
+export const runtime = 'nodejs';
 
 async function getProduct(slug: string) {
   try {
