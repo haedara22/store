@@ -7,6 +7,9 @@ import { PageContainer, PageContent, Section } from '@/components/admin/PageCont
 import { UnifiedStatsCard, StatsGrid } from '@/components/admin/UnifiedStatsCard';
 import { Card } from '@/components/ui/Card';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 async function getDashboardData() {
   try {
     const [
