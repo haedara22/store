@@ -1,14 +1,7 @@
 import type { Metadata } from 'next';
-import { Cairo } from 'next/font/google';
 import './globals.css';
 import { STORE_NAME, STORE_DESCRIPTION } from '@/lib/constants';
 
-const cairo = Cairo({
-  subsets: ['arabic'],
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
-  variable: '--font-cairo',
-});
 
 export const metadata: Metadata = {
   title: {
@@ -68,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${cairo.variable} font-sans antialiased`}>
+      <body className={"font-sans antialiased"}>
         {children}
       </body>
     </html>
