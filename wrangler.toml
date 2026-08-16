@@ -14,7 +14,10 @@ service = "alhamed-store"
 [images]
 binding = "IMAGES"
 
+# Environment variables will be set in Cloudflare Dashboard or via wrangler secrets
+# DATABASE_URL - set via: wrangler secret put DATABASE_URL
+# ADMIN_USERNAME - set via: wrangler secret put ADMIN_USERNAME  
+# ADMIN_PASSWORD - set via: wrangler secret put ADMIN_PASSWORD
+
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://alhamed-store.workers.dev"
-ADMIN_USERNAME = "admin"
-ADMIN_PASSWORD = "admin123"
